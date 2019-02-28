@@ -1,0 +1,65 @@
+page-chat {
+  .scroll-content {
+    overflow: auto;  /* redundant, but just in case */
+    display: flex; /* redundant, but just in case */
+    flex-direction: column-reverse;
+  }
+  .grid {
+    padding: 0;
+  }
+  .sender,
+  .me {
+    .friend-img {
+      position: absolute;
+      border-radius: 40px;
+      width: 40px;
+      height: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.144);
+    }
+    p {
+      border-radius: 5px;
+      margin: 0;
+    }
+  }
+  .sender {
+    p {
+      text-align: left;
+      background-color: #fff;
+      padding: 12px 10px;
+      border: 1px solid #d1d1d1;
+    }
+    .friend-img {
+      margin: 0 0;
+    }
+  }
+
+  .me {
+    .txt {
+      display: inline;
+      text-align: right;
+    }
+    .friend-img {
+      margin: 0 4px;
+    }
+    p {
+      background-color: #306dd8;
+      color: #fff;
+      padding: 12px 10px;
+    }
+  }
+  .text-input {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+
+  ion-footer {
+    background: white;
+    ion-icon {
+      padding: 10px;
+      font-size: 20px;
+      color: green;
+    }
+  }
+}
